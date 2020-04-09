@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+
+body,
+html {
+  height: 100%;
+}
+
+/* Header Layout */
+header h1,.h1, h1 a {
+  text-align: center;
+  font-family: "Girassol", cursive;
+  color: #ffcc33;
+  font-size: 100px;
+  padding: 5%;
+}
+
+header h1,.h1, h1 a:hover{
+  color: #ffcc33;
+
+}
+
+/* Clickable account buttons layout */
+#accountBtns {
+  font-size: 1em;
+  text-align: right;
+}
+#accountBtns button {
+  border: none;
+  background: none;
+  padding: 5px;
+}
+
+#accountBtns button:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Menu Layout */
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: #dda0dd;
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: #dda0dd;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+li.active {
+  /* selected menu's color change */
+  background-color: #ba55d3;
+}
+
+li.active a{
+  color:#fff;
+}
+
+li:not(.active) {
+  background-color: #dda0dd;
+  color:#fff;
+}
+
+li:hover,
+li:focus-within {
+  background: #dc143c;
+  cursor: pointer;
+}
+
+
+li:focus-within {
+  outline:none;
+}
+
+/*hidden submenus under MENU */
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position:absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left:0;
+  display: none;
+}
+
+/*when li is onhover, adapt to its child ul*/
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+
+ul li ul li {
+  clear: both;
+  width:100%;
+}
+
+/*product section*/
+.main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Each section's header (h2) */
+section h2 {
+  font-family: "Girassol", cursive;
+  text-align: center;
+  font-size: 2em;
+  padding: 5%;
+
+  color: #dda0dd
+}
+
+/* Product's Images */
+.main img {
+  max-width: 100%;
+}
+
+.main img:hover {
+  max-width: 110%;
+  height: 100%;
+  box-shadow: 10px 10px 5px #000000;
+}
+
+.main img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Product's description text */
+.main p {
+  font-family: "Comic Neue", cursive;
+  overflow-wrap: break-word;
+}
+
+.main p:hover {
+  color: purple;
+}
+
+/* Footer */
+footer {
+  margin-top: 2em;
+  color:#fff;
+  background-color: #dda0dd;
+  text-align: right;
+  font-family: monospace;
+  text-transform: uppercase;
+  font:16pt;
+  padding:20px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+/*reflection*/
+#reflection{
+  margin: 0 auto;
+  margin-top: 2em;
+  width:80%;
+}
+
+#reflection h2{
+  color:#dda0dd;
+  font-family: "Girassol", cursive;
+}
+
+#reflection p{
+  font-size:1.5em;
+  margin-top:2em;
+  font-family: "Comic Neue", cursive;
+}
+
+#citation{
+  margin-top:8em;
+  width:80%;
+}
+
+
+#citation h4{
+  font-family: "Girassol",cursive;
+}
+
+#citation p{
+  font-family:"Comic Neue", cursive;
+}
+
+@media screen and (max-width: 780px) {
+  header {
+    padding: 2%;
+    font-size: 2em;
+  }
+
+  li,
+  li a {
+    width: 100%;
+  }
+
+  li:hover,
+  li:focus-within {
+    background: #dc143c;
+    cursor: pointer;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    text-align: center;
+  }
+
+  .row p{
+    display: block;
+    margin-left:10%;
+  }
+
+
+  img {
+    display: block;
+    width: 80%;
+    margin:0 auto;
+  }
+}

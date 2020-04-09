@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Reflection</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sitecss.css" media="screen" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Site name with logo -->
+    <header>
+      <h1><a href="reflection.html">Reflection</a></h1>
+    </header>
+    <!-- Clickable Account Buttons -->
+    <div id="accountBtns">
+      <button>sign up</button>
+      <button>sign in</button>
+      <button>cart</button>
+      <button>my page</button>
+      <button>q&a</button>
+    </div>
+    <!-- Navigation Menus with hidden menus -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Menu</a>
+          <ul class="dropdown">
+            <li><a href="#">Bestseller</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="storefront.html">Bestseller</a>
+        </li>
+        <li class="active"><a href="reflection.html">Reflection</a></li>
+      </ul>
+    </nav>
+    <article id="reflection">
+      <h2>RESPONSIVE WEB DESIGN</h2>
+      <p>"Responsive web design (RWD) is an approach to web design
+        that makes web pages render well on a variety of
+        devices and window or screen sizes."(Wikipedia,2020).</p>
+      <p>In other words, responsive web design is to make a web page look nice
+        on all possible devices so that it increases user experience.</p>
+      <p>To make a web page responsive, you may design in a way you want,
+        or you might use existing CSS frameworks,
+        such as, bootstrap and w3.css and so on.</p>
+      <p>First of all, we set the viewport to enable a web page responsive within the
+        meta tag. This will ensure the content's width to be relative
+        to the device's width.</p>
+      <p>Using media queries might be the most crucial part of designing responsive web. By using '@media' keyword, we
+        can design differently for different screen sizes. For example, if we want to show different design when the
+        screen size is smaller than 500px, we add a breakpoint at 500px. (e.g. @media screen and (max-width:
+        500px){...}) Everything inside the curly brackets will be adapted only when the screen is smaller than 500px.
+      </p>
+      <p>Besides, although I realized after I already created my web page, it is better to design for mobile screen
+        first
+        because it will make the page load faster on smaller devices
+        with fewer elements and it is easier to enhance from
+        the essential elements rather than the other way around.</p>
+      <p>For my web page, I used a media query so that the display will be changed when the screen is smaller than
+        780px. Also, I used the ‘Boostrap’ framework to organize my contents in a 3-equal-column layout using the CSS of
+        the class "col-sm-4" which is already defined in the bootstrap. In the way, it significantly reduced my time to
+        design CSS by myself.</p>
+    </article>
+    <article id="citation">
+      <h4>Bibliography</h4>
+      <p>Responsive web design. (2020, March 30). Retrieved from <a
+          href="https://en.wikipedia.org/wiki/Responsive_web_design">
+          https://en.wikipedia.org/wiki/Responsive_web_design</a>
+      </p>
+      <p>Responsive Web Design - Introduction. (n.d.). Retrieved from
+        <a href="https://www.w3schools.com/css/css_rwd_intro.asp">
+          https://www.w3schools.com/css/css_rwd_intro.asp</a>
+      </p>
+    </article>
+    <footer><a href="https://github.com/kaitlynTo/kaitlynTo.github.io">GitHub Link</a></footer>
+  </div> <!-- container div end -->
+</body>
+
+</html>
